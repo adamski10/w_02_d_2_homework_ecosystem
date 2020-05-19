@@ -12,8 +12,8 @@ class River
     @fish_stock.concat(fish)
   end
 
-  def remove_fish(fish_name)
-    @fish_stock.delete(fish_name)
+  def remove_fish(fish)
+    @fish_stock.delete(fish)
   end
 
 end
