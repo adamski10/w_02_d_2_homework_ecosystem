@@ -5,11 +5,15 @@ class River
 
   def initialize(name)
     @name = name
-    @fish_stock = 100
+    @fish_stock = []
   end 
   
-  def remove_fish(num)
-    @fish_stock -= num
+  def fill_river_with_fish(fish)
+    @fish_stock.concat(fish)
+  end
+
+  def remove_fish(fish_name)
+    @fish_stock.delete(fish_name)
   end
 
 end
